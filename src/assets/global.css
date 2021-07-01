@@ -1,0 +1,182 @@
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #FBD3E9;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#BB377D), to(#FBD3E9));
+  background: linear-gradient(to right, #BB377D, #FBD3E9);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+body .ant-table {
+  background-color: transparent;
+}
+
+.characters-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 250px;
+  padding: 15px;
+  gap: 10px;
+  -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  cursor: pointer;
+}
+
+.characters-card img {
+  width: 80px;
+  -webkit-box-shadow: 0 2px 8px #000;
+          box-shadow: 0 2px 8px #000;
+  border-radius: 5px;
+}
+
+.characters-card:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.characters-detail-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  width: 150px;
+  gap: 10px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 7px 29px 0px;
+          box-shadow: rgba(0, 0, 0, 0.2) 0px 7px 29px 0px;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+.characters-detail-card img {
+  width: 100%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  -webkit-box-shadow: 0 4px 10px rgba(122, 120, 120, 0.4);
+          box-shadow: 0 4px 10px rgba(122, 120, 120, 0.4);
+}
+
+.characters-detail-card:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.ant-modal-footer {
+  display: none;
+}
+
+.ant-modal-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 15px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.selected-character .selected-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 30px;
+          column-gap: 30px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 100%;
+  padding: 5%;
+  padding-top: 0;
+}
+
+.selected-character .selected-top img {
+  width: 25%;
+  border-radius: 10px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.425) 0px 7px 29px 0px;
+          box-shadow: rgba(0, 0, 0, 0.425) 0px 7px 29px 0px;
+}
+
+.selected-character .selected-top .top-right-side {
+  width: 100%;
+  height: 100%;
+}
+
+.selected-character .selected-top .top-right-side h1 {
+  border-bottom: 1px solid black;
+}
+
+.selected-character .selected-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  .selected-top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 30px !important;
+    row-gap: 15px;
+  }
+  .selected-top img {
+    width: 100% !important;
+  }
+}
+
+.history-button {
+  position: relative;
+  left: 20px;
+  margin: 15px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.history-button svg {
+  color: white;
+  width: 30px;
+}
+
+.history-button:hover {
+  -webkit-transform: scale(1.09);
+          transform: scale(1.09);
+  margin-left: 5px;
+}
+/*# sourceMappingURL=global.css.map */
